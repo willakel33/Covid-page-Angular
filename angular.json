@@ -29,7 +29,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["src/assets/button_dropdown_functions.js",
+              "src/assets/card_functions.js",
+              "src/assets/side_bar_functions.js",
+              "src/assets/toggle_functions.js"]
           },
           "configurations": {
             "production": {
@@ -42,7 +45,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "16kb"
                 }
               ],
               "fileReplacements": [

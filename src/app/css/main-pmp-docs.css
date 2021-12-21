@@ -1,0 +1,98 @@
+/*https://dev.precision.heart.org/documentation/index.html*/
+
+.main-sidebar {
+    margin-left: 16rem;
+}
+
+.main-nav {
+    margin-top:4.6rem;
+}
+
+#main {
+    margin-top: 4.75rem;
+    min-width: 350px;
+}
+
+.title-container{
+    top:12rem;
+    margin-left:0;
+    margin-right:0;
+    border: 1px solid rgba(149,14,33,.125);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    background-image: url("https://precision.heart.org/assets/images/aha-pmp-bg.jpg");
+    overflow:scroll;
+    padding-top:2%;
+}
+
+.title-container h1, .title-container h2, .title-container h3, .title-container h4 {
+    color: #ffffff;
+    text-align: center;
+    font-weight:normal;
+    padding-bottom: 1%;
+}
+
+.row {
+    margin:0;
+}
+
+table, th, td {
+    border: 1px solid #6D6E71;
+
+}
+
+th, td {
+    padding: 5px 10px;
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+.fa-angle-right, .fa-angle-down {
+    background-color: transparent;
+    border:none;
+    color: #C10E21;
+}
+
+.btns-menu {
+    padding:0.5rem;
+    display:inline-block;
+    width:auto;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+}
+
+.content img {
+    border: 0.1em solid #000000;
+}
+
+.content .note {
+    line-height:1.5;
+    font-style:italic;
+    font-weight: bold;
+    color: #334CD5;
+}
+
+.content {
+    margin:1%;
+    padding-left:1em;
+    overflow: scroll;
+    display: none;
+}
+
+.content a {
+    color:#3b55e6;
+}
+
+.content a:hover {
+    color:#C10E21;
+}
