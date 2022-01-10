@@ -1,0 +1,109 @@
+
+<div id="main" class="main-nav" style="margin:5% 2%;">
+
+    <div id="quick-links" style="margin-top:0; margin-bottom:1%">
+      <span style="color:#6D6E71; font-size:14px; margin-bottom: 1px;">Quick Links</span>
+    </div>
+
+    <div class="cards-section">
+        <div class="card">
+            <div class="card-content data-resource-card">
+                <img style='margin-bottom:5rem; padding:0 3%; transform: translate(0, 50%)' src ='assets/AHA_COVID-19_LOGO_CMYK.jpg' alt='COVID19 GWTG logo'>
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="card">
+                <div class="card-content dataset-stat-card">
+                    <h5 class="red-header">Collection Dates</h5>
+                    <h3> 01/2020-05/2021</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content dataset-stat-card">
+                    <h5 class="red-header">Total Records</h5>
+                    <h3>8920</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content dataset-stat-card">
+                    <h5 class="red-header">PMP Data Location</h5>
+                    <code>/mnt/workspace/GWTG/COVID19</code>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content dataset-stat-card">
+                    <h5 class="red-header">Total Registry Sites</h5>
+                    <h3>122</h3>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content about-card">
+                <h4 class="red-header">About the AHA COVID19 CVD Registry Data</h4>
+                <p>The COVID19 CVD Registry is a voluntary quality improvement registry, powered by AHA's Get With
+                        the
+                        Guidelines.This data was collected from <b>122 hospitals and is comprised of 8920 records and 431
+                        measures.</b>
+                        The registry entry criteria instruct hospitals to enter all patients >=18 years old who are
+                        hospitalized with an active COVID-19 infection.
+                    </p>
+            </div>
+    </div>
+    </div>
+    
+
+    <div id="intro">
+        <button class="collapsible" onclick="return toggle('intro-content', 'intro-plus')">
+            <a class="section-header red-header shadowed-header" href="#">
+                <h2><i class="fa fa-running" style="font-size: larger"></i>Getting Started in the PMP</h2>
+                <i id="intro-plus" class="fas fa-plus"></i>
+            </a>
+        </button>
+        <div id="intro-content" class="content" style="padding:1%;">
+
+            <h4>Root Directory and COVID-19 CVD Data Location</h4>
+            <ul>
+                <li>The COVID-19 Registry Data is located in <code>/mnt/workspace/GWTG/COVID-19</code>.
+                    Information and documentation regarding the registry data, quality
+                    checks, data usage, as well as guidelines for analysis and publication are provided in this location
+                    workspace as well as on this site.</li>
+            </ul>
+            <h4>Software</h4>
+            <ul>
+                <li>The root path in the workspace is <code>/mnt/workspace</code>. This is the default directory for the
+                    Jupyter Home Page JupyterLab, R Studio and SAS Studio.
+                </li>
+                <li>The <a href="/documentation/user-guide/index.html#transfer" target="_blank">Transfer Data Section of the PMP User-Guide</a>
+                    provides information regarding uploading files to the workspace or getting files out of the workspace.
+                </li>
+                <li>The workspace is <b>fully customizable</b> and tools such as MATLAB are available
+                    <a href ='https://precision.heart.org/contact'>upon request</a>. <b>R Studio, Jupyter Notebook, JupyterLab, and SAS Studio</b> are available as tabs when a workspace
+                    is launched.
+                </li>
+                <li>The terminal and a variety of languages including R, Python, bash, and SAS can
+                    be accessed through Jupyter and JupyterLab. A comprehensive list of pre-installed packages and software can be found on the
+                    <a href="https://precision.heart.org/workspace/about" target="_blank">About Workspaces</a> page.
+                </li>
+                <li>R and SAS require a log in
+                    <button id="passwords-plus" class="fa fa-angle-down" onclick="toggle('workspace-passwords', 'passwords-plus')"></button>
+                    <div class="workspace-passwords" style="display:block;"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="cards-header-row" class="row container-fluid" style="padding:1%">
+      <div class="col-lg-6">
+          <div class="section-header red-header grey-header shadowed-header">
+              <i class="fa fa-book-open fa-2x"></i><h2>Data Documentation</h2>
+          </div>
+          <div id="docCards"></div>
+      </div>
+      <div class="col-lg-6">
+          <div class="section-header red-header grey-header">
+              <i class="fa fa-chalkboard-teacher fa-2x"></i><h2>Usage and Examples</h2>
+          </div>
+          <div id="usageCards"></div>
+      </div>
+  </div>
+
+</div>
